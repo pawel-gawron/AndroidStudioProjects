@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/showText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="url Adress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="172dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="123dp"
+        android:onClick="getSet"
+        android:text="@string/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showText" />
+
+    <EditText
+        android:id="@+id/urlAdress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="100dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textUri"
+        android:minHeight="48dp"
+        android:text="http://192.168.0.26/androidAppSenseHat.php?id=2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="210dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="29dp"
+        android:text="url Adress"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/urlAdress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="208dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="101dp"
+        android:text="url Response"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/urlAdress" />
+
+    <TextView
+        android:id="@+id/restClient"
+        android:layout_width="306dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="12dp"
+        android:text="REST CLIENT"
+        android:gravity="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/urlResponse"
+        android:layout_width="308dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="67dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/showText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
